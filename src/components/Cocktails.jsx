@@ -32,7 +32,7 @@ const Cocktails = () => {
           <ul>
             {cocktailLists.map(({name, country, detail, price}) => (
               <li key={name}>
-                <div className="me-28">
+                <div className="md:me-28">
                   <h3>{name}</h3>
                   <p>{country} | {detail}</p>  
                 </div>

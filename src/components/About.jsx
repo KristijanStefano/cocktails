@@ -8,14 +8,14 @@ const About = () => {
             type: 'words'
         })
 
-        const scrollTimeLine = gsap.timeline({
+        const scrollTimeline = gsap.timeline({
             scrollTrigger: {
                 trigger: '#about',
                 start: 'top center'
             }
         })
 
-        scrollTimeLine
+        scrollTimeline
         .from(titleSplit.words, {
             opacity: 0, 
             duration: 1, 
@@ -37,7 +37,7 @@ const About = () => {
             <div className="content">
                 <div className="md:col-span-8">
                     <p className="badge">Best Cocktails</p>
-                    <h2>Where every details matters <span className="text-white">-</span> from muddle to garnish</h2>
+                    <h2>Where every detail matters<span className="text-white">-</span> from muddle to garnish</h2>
                 </div>
 
                 <div className="sub-content">
@@ -46,10 +46,10 @@ const About = () => {
                     </p>
                     <div>
                         <p className="md:text-3xl text-xl font-bold">
-                            <span>4.5</span>5
+                            <span>4.5</span>/5
                         </p>
                         <p className="text-sm text-white-100">
-                            More that +12000 customers
+                           More than +12000 customers
                         </p>
                     </div>
                 </div>

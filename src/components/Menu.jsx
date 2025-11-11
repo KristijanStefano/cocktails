@@ -1,5 +1,5 @@
 'use client'
-import { allCocktails } from '../../constants'
+import { allCocktails } from '../../constants/index.js'
 import { useRef, useState } from 'react'
 import { useGSAP } from '@gsap/react'
 import gsap from 'gsap'
@@ -51,7 +51,7 @@ const Menu = () => {
           return (
             <button 
             key={cocktail.id} 
-            className={`${isActive ? 'text-white border-white/50' : 'text-white/50 border-white/50'}`} 
+            className={`${isActive ? 'text-white border-white' : 'text-white/50 border-white/50'}`} 
             onClick={() => goToSlide(index)}>
               {cocktail.name}
             </button>
